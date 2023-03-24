@@ -12,7 +12,7 @@ function display(event){
   let result;
   if (input1 === input2 && input2 === input3){
     result = "This is an Equilateral triangle";
-  } else if (input1 === input2 && input !== input3 || input1 === input3 && input2 !== input3 || input2 === input3 && input1 !== input3){
+  } else if (input1 === input2 && input2 !== input3 || input1 === input3 && input2 !== input3 || input2 === input3 && input1 !== input3){
     result = "This is an isosceles triangle";
   } else {
     result = "This is a scalene triangle";
