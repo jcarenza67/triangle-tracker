@@ -1,8 +1,3 @@
-//Business logic
-
-
-
-//User Interface
 window.addEventListener("load", function () {
   const form = document.getElementById("triangle");
   form.addEventListener("submit", display);
@@ -16,15 +11,11 @@ function display(event){
 
   let result;
   if (input1 === input2 && input2 === input3){
-    result = "All inputs are equal";
+    result = "This is an Equilateral triangle";
   } else if (input1 === input2 && input1 !== input3){
-    result = "This is an isosceles triangle with two equal sides";
-  } else if (input1 === input3 && input1 !== input2){
-    result = "This is an isosceles triangle with two equal sides";
-  } else if (input2 === input3 && input2 !== input1){
-    result = "This is an isosceles triangle with two equal sides";
+    result = "This is an isosceles triangle";
   } else {
-    result = "This is a scalene triangle with no equal sides";
+    result = "This is a scalene triangle";
   }
   document.getElementById("output").innerText = result;
 }
